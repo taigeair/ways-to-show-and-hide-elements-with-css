@@ -1,0 +1,45 @@
+<!Doctype html>
+<html>
+<head >
+<meta charset="utf-8">
+
+<style type="text/css">
+div {
+	display:block;
+}
+
+a {
+	color:lightskyblue;
+}
+a:hover + div {
+	display:none;
+}
+
+div.show div{
+	width: auto;
+	background-color: pink;
+	display: none;
+}
+
+div.show:hover div, div.show p, div.show:hover{
+	width: auto;
+	background-color: pink;
+	display: inline;
+}
+
+</style>
+</head>
+<body>
+<p>Ways to hide and show stuff.</p>
+<a>Hide stuff using adjacent sibling selector.</a>
+<div>
+	<p>This is text.</p>
+	<p>This is text.</p>
+</div>
+<p>or</p>
+<div class="show">
+	<p>Show me</p>
+	<div>stuff using nested divs.</div>
+</div>
+</body>
+</html>
